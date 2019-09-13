@@ -1,0 +1,20 @@
+
+<li  [ngClass]="{
+    'list-group-item':true,
+    'list-group-item-success':loveIts>dontloveIts,
+    'list-group-item-danger':dontloveIts>loveIts
+
+}">
+        <p style="float: right">{{created_at}}</p>  
+<h6> {{title}} </h6>
+
+
+
+<textarea  [(ngModel)]="content" cols="40" rows="3"></textarea>
+<br>
+<br>
+<div style="display: flex">
+<button class="btn btn-success" (click)="onPlus()">love it !</button>
+<button class="btn btn-danger" (click)="onMoins()">don't love it !</button>
+</div>
+</li>
